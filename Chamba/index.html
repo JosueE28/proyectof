@@ -27,31 +27,42 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-image">
-                <img src="Images/pic_slide02.webp" alt="Personaje 1 99minutos" class="carousel-image active">
-                <img src="Images/pic_slide03.webp" alt="Personaje 2 99minutos" class="carousel-image">
-                <img src="Images/pic_slide04.webp" alt="Personaje 3 99minutos" class="carousel-image">
-                <img src="Images/pic_slide05.webp" alt="Personaje 4 99minutos" class="carousel-image">
-                <img src="Images/pic_slide06.webp" alt="Personaje 5 99minutos" class="carousel-image">
-                <img src="Images/pic_slide01.webp" alt="Personaje 1 99minutos" class="carousel-image">
-
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>99minutos.com</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="Images/pic_slide02.webp" alt="Personaje 1 99minutos" class="carousel-image active">
+                    <img src="Images/pic_slide03.webp" alt="Personaje 2 99minutos" class="carousel-image">
+                    <img src="Images/pic_slide04.webp" alt="Personaje 3 99minutos" class="carousel-image">
+                    <img src="Images/pic_slide05.webp" alt="Personaje 4 99minutos" class="carousel-image">
+                    <img src="Images/pic_slide06.webp" alt="Personaje 5 99minutos" class="carousel-image">
+                    <img src="Images/pic_slide01.webp" alt="Personaje 1 99minutos" class="carousel-image">
+                </div>
+                <div class="hero-text">
+                    <h1 id="hero-title">Cobra en efectivo contra entrega</h1>
+                    <p id="hero-description">Crece tus ventas ofreciendo a tus clientes la posibilidad de pagar en efectivo sus compras al momento de entrega.</p>
+                </div>
             </div>
-            <div class="hero-text">
-                <h1 id="hero-title">Cobra en efectivo contra entrega</h1>
-                <p id="hero-description">Crece tus ventas ofreciendo a tus clientes la posibilidad de pagar en efectivo sus compras al momento de entrega.</p>
+            <div class="services">
+                <button class="service-button active" data-index="0"><img src="Images/boton.png" alt="envíos 99"></button>
+                <button class="service-button" data-index="1"><img src="Images/boton2.png" alt="tailor 99"></button>
+                <button class="service-button" data-index="2">fulfill 99</button>
+                <button class="service-button" data-index="3">cash 99</button>
+                <button class="service-button" data-index="4">punto 99</button>
             </div>
-        </div>
-        <div class="services">
-            <button class="service-button active" data-index="0"><img src="Images/boton.png" alt="envíos 99"> </button>
-            <button class="service-button" data-index="1">tailor 99</button>
-            <button class="service-button" data-index="2">fulfill 99</button>
-            <button class="service-button" data-index="3">cash 99</button>
-            <button class="service-button" data-index="4">punto 99</button>
-            <button></button>
-        </div>
-    </section>
+        </section>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
 
     <script src="script.js"></script>
 </body>

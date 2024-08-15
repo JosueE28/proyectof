@@ -63,11 +63,11 @@ nav {
     cursor: pointer;
 }
 
+/* Estilos para la sección hero */
 .hero {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 40px 20px;
     background-color: #f8f8f8;
 }
@@ -75,19 +75,36 @@ nav {
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 30px;
-    max-width: 1200px;
+    justify-content: center;
+    gap: 40px;
     width: 100%;
+    max-width: 1200px;
+}
+
+.hero-image {
+    width: 50%;
+    position: relative;
 }
 
 .hero-image img {
-    max-width: 100%;
+    display: none;
+    width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.hero-text {
+    width: 50%;
+    padding: 20px;
 }
 
 .hero-text h1 {
-    color: #003f87;
     font-size: 2.5rem;
+    color: #003f87;
     margin-bottom: 20px;
 }
 
@@ -97,11 +114,13 @@ nav {
     margin-bottom: 20px;
 }
 
+/* Botones de servicios */
 .services {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    width: 100%;
     margin-top: 30px;
+    gap: 10px;
 }
 
 .service-button {
@@ -112,24 +131,22 @@ nav {
     border-radius: 10px;
     cursor: pointer;
     font-size: 1rem;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 120px;
 }
 
-.service-button.active {
-    background-color: #00af54;
-    color: white;
-}
-/* Mantén el estilo proporcionado previamente */
-.hero-image img {
-    display: none;
+.service-button img {
     width: 100%;
     height: auto;
 }
 
-.carousel-image.active {
-    display: block;
-}
-
 .service-button.active {
     background-color: #00af54;
     color: white;
+    transform: scale(1.1);
+}
+
+.service-button.active img {
+    transform: scale(1.1);
 }
