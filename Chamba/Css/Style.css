@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-outline {
+    border: 2px solid #00af54;
+    background-color: transparent;
+    color: #00af54;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #00af54;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text h1 {
+    color: #003f87;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.service-button {
+    background-color: #f8f8f8;
+    border: 2px solid #00af54;
+    color: #00af54;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.service-button.active {
+    background-color: #00af54;
+    color: white;
+}
+/* Mantén el estilo proporcionado previamente */
+.hero-image img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.service-button.active {
+    background-color: #00af54;
+    color: white;
+}
