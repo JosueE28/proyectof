@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "La red de puntos de recolección y entrega más grande de México",
         "Logística tan única como tu negocio"
     ];
-    
+
     const descriptions = [
         "Con diferentes opciones de envío, tarifas transparentes, rastreo satelital y una plataforma sencilla de usar, comenzar a auto-gestionar tu logística con envios99 es fácil y seguro.​",
         "Un servicio 100% personalizable que permite a nuestros clientes diseñar desde cero una solución logística que se adapte a sus necesidades sin importar de qué tan únicas sea tu industria.",
@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
 
     function updateCarousel(index) {
-        images.forEach((img, i) => img.classList.toggle('active', i === index));
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+            img.style.transition = "opacity 1s ease-in-out";
+        });
         buttons.forEach((btn, i) => btn.classList.toggle('active', i === index));
         document.getElementById('hero-title').textContent = titles[index];
         document.getElementById('hero-description').textContent = descriptions[index];
@@ -39,5 +42,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    setInterval(nextSlide, 5000); // Cambia de imagen cada 5 segundos
+    setInterval(nextSlide, 5000); 
+
+    
+    const menu = document.querySelector('.menu');
+    const threeLinesIcon = document.getElementById('three');
+
+    document.addEventListener("click", function() {
+        const threeLines = document.getElementById('three');
+        const menu = document.querySelector('.menu');
+    
+        if (threeLines && menu) {
+            threeLines.addEventListener('click', function() {
+                menu.classList.toggle('show');
+            });
+        } else {
+            console.error('Elementos no encontrados: Verifica los IDs y clases.');
+        }
+    });
+    
 });
